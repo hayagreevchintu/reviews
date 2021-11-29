@@ -57,3 +57,11 @@ let review = document.querySelector('#info');
 let prevBtn = document.querySelector('.prev-btn');
 let nextBtn = document.querySelector('.next-btn');
 let randomBtn = document.querySelector('.random-btn');
+
+//function to show the corresponding person based on value of currentItem
+let showPerson = () => {
+    image.src = reviews[currentItem].img;
+    author.textContent = reviews[currentItem].name;
+    job.textContent = reviews[currentItem].job;
+    review.textContent = reviews[currentItem].text;
+};
