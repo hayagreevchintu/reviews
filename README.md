@@ -6,6 +6,8 @@ When the previous button is clicked, the previous review is displayed. Similarly
 
 When the "Surprise Me" button is clicked, a random review is displayed.
 
+You can find the working version of this page at https://https://hayagreev-reviews.netlify.app/
+
 I have followed John Smilga's Vannila JS projects tutorial on YouTube and built this page. I have not designed the CSS. I have only built the JavaScript functionality(app.js) to gain a better understanding and grasp on my JS skills.
 
 Link to the tutorial: https://www.youtube.com/watch?v=c5SIG7Ie0dM&t=2110s
