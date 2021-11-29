@@ -67,7 +67,7 @@ let showPerson = () => {
 };
 
 //showing the previous person
-prevBtn.addEventListener('click',()=>{
+prevBtn.addEventListener('click',() => {
     currentItem--;
     if(currentItem < 0){
         currentItem = 3;
@@ -76,10 +76,16 @@ prevBtn.addEventListener('click',()=>{
 });
 
 //showing the next person
-nextBtn.addEventListener('click',()=>{
+nextBtn.addEventListener('click',() => {
     currentItem++;
     if(currentItem > 3){
         currentItem = 0;
     }
+    showPerson();
+});
+
+//showing a random person
+randomBtn.addEventListener('click',() => {
+    currentItem = Math.floor(Math.random() * reviews.length);
     showPerson();
 });
