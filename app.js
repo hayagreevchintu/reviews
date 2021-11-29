@@ -74,3 +74,12 @@ prevBtn.addEventListener('click',()=>{
     }
     showPerson();
 });
+
+//showing the next person
+nextBtn.addEventListener('click',()=>{
+    currentItem++;
+    if(currentItem > 3){
+        currentItem = 0;
+    }
+    showPerson();
+});
