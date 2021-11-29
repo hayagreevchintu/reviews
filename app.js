@@ -65,3 +65,12 @@ let showPerson = () => {
     job.textContent = reviews[currentItem].job;
     review.textContent = reviews[currentItem].text;
 };
+
+//showing the previous person
+prevBtn.addEventListener('click',()=>{
+    currentItem--;
+    if(currentItem < 0){
+        currentItem = 3;
+    }
+    showPerson();
+});
